@@ -1,6 +1,9 @@
 library(rvest)
+install.packages("stringr")
 library(stringr)
+install.packages("lubridate")
 library(lubridate)
+install.packages("tidyverse")
 library(tidyverse)
 
 cran_link <- function(...) {

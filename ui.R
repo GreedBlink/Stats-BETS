@@ -17,9 +17,9 @@ shinyUI(fluidPage(
            "You can enter multiple packages to compare them"),
       selectInput("package", 
                   label = "Packages:",
-                  selected = sample(package_names, 2), # initialize the graph with a random package
-                  choices = package_names,
-                  multiple = TRUE),      
+                  selected = "BETS", # initialize the graph with a random package
+                  choices = "BETS",
+                  multiple = FALSE),      
       radioButtons("transformation", 
                    "Data Transformation:",
                    c("Daily" = "daily", "Weekly" = "weekly", "Cumulative" = "cumulative")),
